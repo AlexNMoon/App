@@ -7,6 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E1E13501BA0631400033CF6 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E134F1BA0631400033CF6 /* Albums.swift */; };
+		9E1E13521BA0632400033CF6 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13511BA0632400033CF6 /* Artists.swift */; };
+		9E1E13541BA0643000033CF6 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13531BA0643000033CF6 /* AlbumsCell.swift */; };
+		9E1E13581BA0671E00033CF6 /* TracksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13571BA0671E00033CF6 /* TracksCell.swift */; };
+		9E1E135A1BA06B6E00033CF6 /* ArtistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13591BA06B6E00033CF6 /* ArtistsCell.swift */; };
+		9E1E135C1BA06C4100033CF6 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135B1BA06C4100033CF6 /* Tracks.swift */; };
+		9E1E135E1BA06D9F00033CF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135D1BA06D9F00033CF6 /* API.swift */; };
+		9E1E135F1BA07A6F00033CF6 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E134F1BA0631400033CF6 /* Albums.swift */; };
+		9E1E13601BA07A7300033CF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135D1BA06D9F00033CF6 /* API.swift */; };
+		9E1E13611BA0857900033CF6 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13531BA0643000033CF6 /* AlbumsCell.swift */; };
+		9E1E13621BA0857C00033CF6 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13511BA0632400033CF6 /* Artists.swift */; };
+		9E1E13631BA0857F00033CF6 /* ArtistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13591BA06B6E00033CF6 /* ArtistsCell.swift */; };
+		9E1E13641BA0858100033CF6 /* TracksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13571BA0671E00033CF6 /* TracksCell.swift */; };
+		9E1E13651BA0858500033CF6 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135B1BA06C4100033CF6 /* Tracks.swift */; };
 		9ED576161B9F09C600231004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED576151B9F09C600231004 /* AppDelegate.swift */; };
 		9ED576181B9F09C600231004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED576171B9F09C600231004 /* ViewController.swift */; };
 		9ED5761B1B9F09C600231004 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9ED576191B9F09C600231004 /* Main.storyboard */; };
@@ -26,6 +40,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		9E1E134F1BA0631400033CF6 /* Albums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
+		9E1E13511BA0632400033CF6 /* Artists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
+		9E1E13531BA0643000033CF6 /* AlbumsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
+		9E1E13571BA0671E00033CF6 /* TracksCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TracksCell.swift; sourceTree = "<group>"; };
+		9E1E13591BA06B6E00033CF6 /* ArtistsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsCell.swift; sourceTree = "<group>"; };
+		9E1E135B1BA06C4100033CF6 /* Tracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
+		9E1E135D1BA06D9F00033CF6 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9ED576101B9F09C600231004 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED576141B9F09C600231004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9ED576151B9F09C600231004 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +104,13 @@
 				9ED5761C1B9F09C600231004 /* Images.xcassets */,
 				9ED5761E1B9F09C600231004 /* LaunchScreen.xib */,
 				9ED576131B9F09C600231004 /* Supporting Files */,
+				9E1E134F1BA0631400033CF6 /* Albums.swift */,
+				9E1E13511BA0632400033CF6 /* Artists.swift */,
+				9E1E13531BA0643000033CF6 /* AlbumsCell.swift */,
+				9E1E13571BA0671E00033CF6 /* TracksCell.swift */,
+				9E1E13591BA06B6E00033CF6 /* ArtistsCell.swift */,
+				9E1E135B1BA06C4100033CF6 /* Tracks.swift */,
+				9E1E135D1BA06D9F00033CF6 /* API.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -213,7 +241,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ED576181B9F09C600231004 /* ViewController.swift in Sources */,
+				9E1E13581BA0671E00033CF6 /* TracksCell.swift in Sources */,
+				9E1E13521BA0632400033CF6 /* Artists.swift in Sources */,
+				9E1E135E1BA06D9F00033CF6 /* API.swift in Sources */,
 				9ED576161B9F09C600231004 /* AppDelegate.swift in Sources */,
+				9E1E13501BA0631400033CF6 /* Albums.swift in Sources */,
+				9E1E135A1BA06B6E00033CF6 /* ArtistsCell.swift in Sources */,
+				9E1E13541BA0643000033CF6 /* AlbumsCell.swift in Sources */,
+				9E1E135C1BA06C4100033CF6 /* Tracks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -222,6 +257,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ED5762C1B9F09C600231004 /* AppTests.swift in Sources */,
+				9E1E13601BA07A7300033CF6 /* API.swift in Sources */,
+				9E1E13621BA0857C00033CF6 /* Artists.swift in Sources */,
+				9E1E135F1BA07A6F00033CF6 /* Albums.swift in Sources */,
+				9E1E13631BA0857F00033CF6 /* ArtistsCell.swift in Sources */,
+				9E1E13611BA0857900033CF6 /* AlbumsCell.swift in Sources */,
+				9E1E13641BA0858100033CF6 /* TracksCell.swift in Sources */,
+				9E1E13651BA0858500033CF6 /* Tracks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +451,7 @@
 				9ED576311B9F09C600231004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9ED576321B9F09C600231004 /* Build configuration list for PBXNativeTarget "AppTests" */ = {
 			isa = XCConfigurationList;
@@ -417,6 +460,7 @@
 				9ED576341B9F09C600231004 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

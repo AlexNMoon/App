@@ -7,14 +7,14 @@
 	<key>IDESourceControlProjectIdentifier</key>
 	<string>BB64328C-CE18-49B1-8F20-2DF552C2B5AC</string>
 	<key>IDESourceControlProjectName</key>
-	<string>project</string>
+	<string>App</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>863920204B19EC2F1BEA8AA3C76061852B465027</key>
 		<string>https://github.com/MoonLady/App.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>App.xcodeproj/project.xcworkspace</string>
+	<string>App.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>863920204B19EC2F1BEA8AA3C76061852B465027</key>
