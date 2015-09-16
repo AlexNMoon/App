@@ -41,8 +41,16 @@ class Albums: UICollectionViewController {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Albums Cell", forIndexPath: indexPath) as! AlbumsCell
         if let topalbums: AnyObject = JSONDictionary["topalbums"] {
             if let albums: [AnyObject] = topalbums["album"] as? [AnyObject] {
-                if let album: AnyObject = albums[indexPath.item] as? AnyObject{
-                    cell.nameLabel.text =  album["name"]
+                if let album = albums[indexPath.item] as? NSDictionary {
+                    cell.nameLabel.text =  album["name"] as? String
+                    cell.playcountLabel.text = album["playcount"] as? String
+                    if let images = album["image"] as? [AnyObject] {
+                        if let image = images[0] as? NSDictionary {
+                            let url = NSURL(string: image["#text"] as! String)
+                            let imageURL = NSData(contentsOfURL: url!)
+                            cell.imageView.image = UIImage(data: imageURL!)
+                        }
+                    }
                 }
             }
         }
