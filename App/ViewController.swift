@@ -22,9 +22,15 @@ class ViewController: UIViewController, UITextFieldDelegate, NSURLConnectionDele
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject!) {
+        if (segue.identifier == "segueHelloData") {
+            var userDataView = segue.destinationViewController as! UserData
+            userDataView.userName = submitTextField.text
+        }
+    }
 
     @IBAction func submitButtonTap(sender: AnyObject) {
-        //self.view.endEditing(true)
         self.submitTextField.resignFirstResponder()
     }
     

@@ -9,5 +9,6 @@
 import UIKit
 
 class Tracks: UITableViewController {
+    var topTracks: NSDictionary!
 
 }

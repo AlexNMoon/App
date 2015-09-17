@@ -12,13 +12,11 @@ class Albums: UICollectionViewController {
     
     var api = API()
     var albumCount = 0
-    var JSONDictionary: NSDictionary = [:]
+    var topAlbums: NSDictionary!
     override func viewDidLoad() {
         super.viewDidLoad()
-        api.searchFor("http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=rj&api_key=6d7403baf4120f299266f1fa0da3f2ef&format=json")
-        JSONDictionary = api.JSONDictionary
-        if let topalbums: AnyObject = JSONDictionary["topalbums"] {
-            if let album: AnyObject? = topalbums["album"] {
+        if let albums: AnyObject = topAlbums["topalbums"] {
+            if let album: AnyObject? = albums["album"] {
                 albumCount = album!.count
             }
         }
@@ -39,7 +37,7 @@ class Albums: UICollectionViewController {
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Albums Cell", forIndexPath: indexPath) as! AlbumsCell
-        if let topalbums: AnyObject = JSONDictionary["topalbums"] {
+        if let topalbums: AnyObject = topAlbums["topalbums"] {
             if let albums: [AnyObject] = topalbums["album"] as? [AnyObject] {
                 if let album = albums[indexPath.item] as? NSDictionary {
                     cell.nameLabel.text =  album["name"] as? String

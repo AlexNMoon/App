@@ -34,15 +34,23 @@ class API : NSObject, NSURLConnectionDataDelegate, NSURLConnectionDelegate{
     }
     
     func connectionDidFinishLoading(connection: NSURLConnection) {
+        var error: NSErrorPointer = NSErrorPointer()
         // Request complete, self.data should now hold the resulting info
         // Convert it to a string
         var dataAsString: NSString = NSString(data: self.data, encoding: NSUTF8StringEncoding)!
         
         // Convert the retrieved data in to an object through JSON deserialization
-        var err: NSError
-        var jsonResult: NSDictionary = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: nil) as! NSDictionary
-        JSONDictionary = jsonResult
-        
+       // let json: AnyObject? = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &error)
+//        if let jsonResult: AnyObject = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: &error) {
+       // if let jsonResult = json as? [String: AnyObject] {
+//            let dictionary: Dictionary<String, AnyObject> = (jsonResult as? Dictionary<String, AnyObject>)!
+
+        if let json = NSJSONSerialization.JSONObjectWithData(data, options: NSJSONReadingOptions.MutableContainers, error: error) as? NSDictionary{
+            println(json)
+            println("nil")
+            } else {
+                println("false")
+        }
     }
     
     
