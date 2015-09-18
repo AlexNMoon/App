@@ -9,18 +9,18 @@
 import UIKit
 
 class Albums: UICollectionViewController {
-    
-    var api = API()
-    var albumCount = 0
+
     var topAlbums: NSDictionary!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        if let albums: AnyObject = topAlbums["topalbums"] {
-            if let album: AnyObject? = albums["album"] {
-                albumCount = album!.count
-            }
-        }
     }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.collectionView!.reloadData()
+    }
+    
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -32,12 +32,19 @@ class Albums: UICollectionViewController {
     
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return albumCount
+        if let topalbums = topAlbums["topalbums"] as? NSDictionary {
+            if let albums: [AnyObject] = topalbums["album"] as? [AnyObject] {
+                return albums.count
+            }
+        }
+
+        return 2
     }
+    
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Albums Cell", forIndexPath: indexPath) as! AlbumsCell
-        if let topalbums: AnyObject = topAlbums["topalbums"] {
+        if let topalbums = topAlbums["topalbums"] as? NSDictionary {
             if let albums: [AnyObject] = topalbums["album"] as? [AnyObject] {
                 if let album = albums[indexPath.item] as? NSDictionary {
                     cell.nameLabel.text =  album["name"] as? String
