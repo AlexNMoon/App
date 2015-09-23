@@ -14,13 +14,7 @@
 		9E1E135A1BA06B6E00033CF6 /* ArtistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13591BA06B6E00033CF6 /* ArtistsCell.swift */; };
 		9E1E135C1BA06C4100033CF6 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135B1BA06C4100033CF6 /* Tracks.swift */; };
 		9E1E135E1BA06D9F00033CF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135D1BA06D9F00033CF6 /* API.swift */; };
-		9E1E135F1BA07A6F00033CF6 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E134F1BA0631400033CF6 /* Albums.swift */; };
-		9E1E13601BA07A7300033CF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135D1BA06D9F00033CF6 /* API.swift */; };
-		9E1E13611BA0857900033CF6 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13531BA0643000033CF6 /* AlbumsCell.swift */; };
-		9E1E13621BA0857C00033CF6 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13511BA0632400033CF6 /* Artists.swift */; };
-		9E1E13631BA0857F00033CF6 /* ArtistsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13591BA06B6E00033CF6 /* ArtistsCell.swift */; };
-		9E1E13641BA0858100033CF6 /* TracksCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13571BA0671E00033CF6 /* TracksCell.swift */; };
-		9E1E13651BA0858500033CF6 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135B1BA06C4100033CF6 /* Tracks.swift */; };
+		9E3177541BB2D5A600630C78 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3177531BB2D5A600630C78 /* libSDWebImage.a */; };
 		9EADE43F1BAAE8AB005322F2 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EADE43E1BAAE8AB005322F2 /* UserData.swift */; };
 		9ED576161B9F09C600231004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED576151B9F09C600231004 /* AppDelegate.swift */; };
 		9ED576181B9F09C600231004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED576171B9F09C600231004 /* ViewController.swift */; };
@@ -28,7 +22,7 @@
 		9ED5761D1B9F09C600231004 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9ED5761C1B9F09C600231004 /* Images.xcassets */; };
 		9ED576201B9F09C600231004 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9ED5761E1B9F09C600231004 /* LaunchScreen.xib */; };
 		9ED5762C1B9F09C600231004 /* AppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED5762B1B9F09C600231004 /* AppTests.swift */; };
-		F0B52E818C74AD9A752D737B /* Pods_App.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F05F2D45523D97595492841 /* Pods_App.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		B3C23F711708FEF19BB5D855 /* libPods-App.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D7C20BE2C18905E0EFB9612 /* libPods-App.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,8 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1D7C20BE2C18905E0EFB9612 /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E941F5C136195B6BC22560E /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
-		2F05F2D45523D97595492841 /* Pods_App.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_App.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9E1E134F1BA0631400033CF6 /* Albums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
 		9E1E13511BA0632400033CF6 /* Artists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
 		9E1E13531BA0643000033CF6 /* AlbumsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
@@ -51,6 +45,8 @@
 		9E1E13591BA06B6E00033CF6 /* ArtistsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ArtistsCell.swift; sourceTree = "<group>"; };
 		9E1E135B1BA06C4100033CF6 /* Tracks.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tracks.swift; sourceTree = "<group>"; };
 		9E1E135D1BA06D9F00033CF6 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		9E3177531BB2D5A600630C78 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
+		9E3177571BB2E30D00630C78 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
 		9EADE43E1BAAE8AB005322F2 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		9ED576101B9F09C600231004 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED576141B9F09C600231004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -70,7 +66,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F0B52E818C74AD9A752D737B /* Pods_App.framework in Frameworks */,
+				9E3177541BB2D5A600630C78 /* libSDWebImage.a in Frameworks */,
+				B3C23F711708FEF19BB5D855 /* libPods-App.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,7 +93,8 @@
 		8A6EF4DE364D6D2931670072 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				2F05F2D45523D97595492841 /* Pods_App.framework */,
+				9E3177531BB2D5A600630C78 /* libSDWebImage.a */,
+				1D7C20BE2C18905E0EFB9612 /* libPods-App.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -138,6 +136,7 @@
 				9E1E135B1BA06C4100033CF6 /* Tracks.swift */,
 				9E1E135D1BA06D9F00033CF6 /* API.swift */,
 				9EADE43E1BAAE8AB005322F2 /* UserData.swift */,
+				9E3177571BB2E30D00630C78 /* App-Bridging-Header.h */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -178,7 +177,6 @@
 				9ED5760C1B9F09C600231004 /* Sources */,
 				9ED5760D1B9F09C600231004 /* Frameworks */,
 				9ED5760E1B9F09C600231004 /* Resources */,
-				535512DBF74AE056CD97718B /* Embed Pods Frameworks */,
 				6D80CC0983F30E6E78C2CD3E /* Copy Pods Resources */,
 			);
 			buildRules = (
@@ -266,21 +264,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		535512DBF74AE056CD97718B /* Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "Embed Pods Frameworks";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-App/Pods-App-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		66A4951EB878711691DDB9F1 /* Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -336,13 +319,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				9ED5762C1B9F09C600231004 /* AppTests.swift in Sources */,
-				9E1E13601BA07A7300033CF6 /* API.swift in Sources */,
-				9E1E13621BA0857C00033CF6 /* Artists.swift in Sources */,
-				9E1E135F1BA07A6F00033CF6 /* Albums.swift in Sources */,
-				9E1E13631BA0857F00033CF6 /* ArtistsCell.swift in Sources */,
-				9E1E13611BA0857900033CF6 /* AlbumsCell.swift in Sources */,
-				9E1E13641BA0858100033CF6 /* TracksCell.swift in Sources */,
-				9E1E13651BA0858500033CF6 /* Tracks.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,7 +440,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mozidevelopment/Desktop/App/App/App-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -475,7 +456,12 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = App/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/mozidevelopment/Desktop/App/App/App-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -494,6 +480,7 @@
 				INFOPLIST_FILE = AppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Debug;
@@ -509,6 +496,7 @@
 				INFOPLIST_FILE = AppTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/App.app/App";
 			};
 			name = Release;

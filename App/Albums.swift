@@ -7,7 +7,6 @@
 //
 
 import UIKit
-import Kingfisher
 
 class Albums: UICollectionViewController {
 
@@ -51,10 +50,10 @@ class Albums: UICollectionViewController {
                     cell.nameLabel.text =  album["name"] as? String
                     cell.playcountLabel.text = album["playcount"] as? String
                     if let images = album["image"] as? [AnyObject] {
-                        if let image = images[0] as? NSDictionary {
+                        if let image = images[2] as? NSDictionary {
                             let url = NSURL(string: image["#text"] as! String)
                             let imageURL = NSData(contentsOfURL: url!)
-                            cell.imageView.image = UIImage(data: imageURL!)
+                            cell.imageView.sd_setImageWithURL(url!)
                         }
                     }
                 }

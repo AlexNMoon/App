@@ -4,12 +4,12 @@
 <dict>
 	<key>SchemeUserState</key>
 	<dict>
-		<key>Kingfisher.xcscheme</key>
+		<key>Pods-App.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>Pods-App.xcscheme</key>
+		<key>SDWebImage.xcscheme</key>
 		<dict>
 			<key>isShown</key>
 			<false/>
@@ -17,12 +17,12 @@
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>59E6E42B4C989E2AAA3589481713370D</key>
+		<key>0F3A750F7500F98ABBFD5EE6D3E7A008</key>
 		<dict>
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>80CF53ABBA6CA7AEE873277EFA0460EA</key>
+		<key>5352D432641F0656C90741034E32F31E</key>
 		<dict>
 			<key>primary</key>
 			<true/>

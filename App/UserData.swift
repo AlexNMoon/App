@@ -17,9 +17,9 @@ class UserData: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        apiAlbums.searchFor("http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=rj&api_key=6d7403baf4120f299266f1fa0da3f2ef&format=json")
-        apiArtists.searchFor("http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=rj&api_key=6d7403baf4120f299266f1fa0da3f2ef&format=json")
-        apiTracks.searchFor("http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=rj&api_key=6d7403baf4120f299266f1fa0da3f2ef&format=json")
+        apiAlbums.searchFor("http://ws.audioscrobbler.com/2.0/?method=user.gettopalbums&user=\(userName)&api_key=6d7403baf4120f299266f1fa0da3f2ef&format=json")
+        apiArtists.searchFor("http://ws.audioscrobbler.com/2.0/?method=user.gettopartists&user=\(userName)&api_key=6d7403baf4120f299266f1fa0da3f2ef&format=json")
+        apiTracks.searchFor("http://ws.audioscrobbler.com/2.0/?method=user.gettoptracks&user=\(userName)&api_key=6d7403baf4120f299266f1fa0da3f2ef&format=json")
     }
     
     override func didReceiveMemoryWarning() {
@@ -33,7 +33,7 @@ class UserData: UIViewController {
         } else {
             if (segue.identifier == "segueDataArtists") {
                 var artistsView = segue.destinationViewController as! Artists
-                artistsView.topArists = apiArtists.JSONDictionary
+                artistsView.topArtists = apiArtists.JSONDictionary
             } else {
                 if (segue.identifier == "segueDataTracks") {
                     var tracksView = segue.destinationViewController as! Tracks

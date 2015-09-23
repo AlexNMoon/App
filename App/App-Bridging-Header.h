@@ -9,5 +9,6 @@
 #ifndef App_App_Bridging_Header_h
 #define App_App_Bridging_Header_h
 
+#import <UIImageView+WebCache.h>
 
 #endif

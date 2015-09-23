@@ -2,8 +2,8 @@
 platform :ios, '8.0'
 
 target 'App' do
-pod 'Kingfisher', '~> 1.6'
-use_frameworks!
+pod 'SDWebImage', '~> 3.7'
+
 end
 
 target 'AppTests' do
