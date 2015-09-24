@@ -9,10 +9,28 @@
 import UIKit
 
 class Tracks: UITableViewController {
-    var topTracks: NSDictionary!
+    
+    var userName: String!
+    var topTracks: [Track]!
+    var apiTracks = API()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
+    
+    override func viewWillAppear(animated: Bool) {
+        self.apiTracks.searchFor(userName, urltipe: .Tracks, completionHandler: { (JSONDictionary: NSDictionary) -> Void in
+            if let toptracks = JSONDictionary["toptracks"] as? NSDictionary {
+                if let tracks: [AnyObject] = toptracks["track"] as? [AnyObject] {
+                    for index in 0..<tracks.count {
+                        if let track = tracks[index] as? NSDictionary {
+                            self.topTracks[index] = Track(name: track["name"] as! String, playcount: track["playcount"] as! String)
+                        }
+                    }
+                }
+            }
+            self.tableView.reloadData()
+        })
     }
     
     override func didReceiveMemoryWarning() {
@@ -21,24 +39,16 @@ class Tracks: UITableViewController {
     }
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        if let toptracks = topTracks["toptracks"] as? NSDictionary {
-            if let tracks: [AnyObject] = toptracks["track"] as? [AnyObject] {
-                return tracks.count
-            }
+        if topTracks != nil {
+            return topTracks.count
         }
-
-        return 1
+        return 2
     }
     
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("Tracks Cell", forIndexPath: indexPath) as! TracksCell
-        if let toptracks = topTracks["toptracks"] as? NSDictionary {
-            if let tracks: [AnyObject] = toptracks["track"] as? [AnyObject] {
-                if let track = tracks[indexPath.item] as? NSDictionary {
-                    cell.nameLabel.text =  track["name"] as? String
-                    cell.playcountLabel.text = track["playcount"] as? String
-                }
-            }
+        if topTracks != nil {
+        cell.setParametrs(topTracks[indexPath.item])
         }
         return cell
         
@@ -46,3 +56,4 @@ class Tracks: UITableViewController {
     
 
 }
+// Parse dictionaries to model structs

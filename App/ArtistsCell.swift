@@ -15,4 +15,10 @@ class ArtistsCell: UICollectionViewCell {
     
     @IBOutlet weak var nameLabel: UILabel!
 
+    func setParametrs(artist: Artist) {
+        self.playcountLabel.text = artist.playcount
+        self.imageView.sd_setImageWithURL(artist.imageURL)
+        self.nameLabel.text = artist.name
+    }
+
 }

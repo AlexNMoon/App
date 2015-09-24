@@ -15,4 +15,11 @@ class AlbumsCell: UICollectionViewCell {
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var nameLabel: UILabel!
+    
+    func setParametrs(album: Album) {
+        self.playcountLabel.text = album.playcount
+        self.imageView.sd_setImageWithURL(album.imageURL)
+        self.nameLabel.text = album.name
+    }
+    
 }

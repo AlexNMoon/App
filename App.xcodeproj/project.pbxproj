@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9E0707F11BB42F2B0090E8E0 /* Track.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0707F01BB42F2B0090E8E0 /* Track.swift */; };
+		9E0707F31BB42F3A0090E8E0 /* Artist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0707F21BB42F3A0090E8E0 /* Artist.swift */; };
+		9E0707F51BB42F4A0090E8E0 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E0707F41BB42F4A0090E8E0 /* Album.swift */; };
 		9E1E13501BA0631400033CF6 /* Albums.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E134F1BA0631400033CF6 /* Albums.swift */; };
 		9E1E13521BA0632400033CF6 /* Artists.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13511BA0632400033CF6 /* Artists.swift */; };
 		9E1E13541BA0643000033CF6 /* AlbumsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E13531BA0643000033CF6 /* AlbumsCell.swift */; };
@@ -38,6 +41,9 @@
 /* Begin PBXFileReference section */
 		1D7C20BE2C18905E0EFB9612 /* libPods-App.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-App.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E941F5C136195B6BC22560E /* Pods-App.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-App.release.xcconfig"; path = "Pods/Target Support Files/Pods-App/Pods-App.release.xcconfig"; sourceTree = "<group>"; };
+		9E0707F01BB42F2B0090E8E0 /* Track.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Track.swift; sourceTree = "<group>"; };
+		9E0707F21BB42F3A0090E8E0 /* Artist.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artist.swift; sourceTree = "<group>"; };
+		9E0707F41BB42F4A0090E8E0 /* Album.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		9E1E134F1BA0631400033CF6 /* Albums.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Albums.swift; sourceTree = "<group>"; };
 		9E1E13511BA0632400033CF6 /* Artists.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Artists.swift; sourceTree = "<group>"; };
 		9E1E13531BA0643000033CF6 /* AlbumsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlbumsCell.swift; sourceTree = "<group>"; };
@@ -137,6 +143,9 @@
 				9E1E135D1BA06D9F00033CF6 /* API.swift */,
 				9EADE43E1BAAE8AB005322F2 /* UserData.swift */,
 				9E3177571BB2E30D00630C78 /* App-Bridging-Header.h */,
+				9E0707F01BB42F2B0090E8E0 /* Track.swift */,
+				9E0707F21BB42F3A0090E8E0 /* Artist.swift */,
+				9E0707F41BB42F4A0090E8E0 /* Album.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -301,11 +310,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9E0707F51BB42F4A0090E8E0 /* Album.swift in Sources */,
 				9ED576181B9F09C600231004 /* ViewController.swift in Sources */,
+				9E0707F11BB42F2B0090E8E0 /* Track.swift in Sources */,
 				9E1E13581BA0671E00033CF6 /* TracksCell.swift in Sources */,
 				9E1E13521BA0632400033CF6 /* Artists.swift in Sources */,
 				9E1E135E1BA06D9F00033CF6 /* API.swift in Sources */,
 				9ED576161B9F09C600231004 /* AppDelegate.swift in Sources */,
+				9E0707F31BB42F3A0090E8E0 /* Artist.swift in Sources */,
 				9E1E13501BA0631400033CF6 /* Albums.swift in Sources */,
 				9E1E135A1BA06B6E00033CF6 /* ArtistsCell.swift in Sources */,
 				9E1E13541BA0643000033CF6 /* AlbumsCell.swift in Sources */,

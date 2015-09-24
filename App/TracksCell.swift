@@ -9,10 +9,15 @@
 import UIKit
 
 class TracksCell: UITableViewCell {
-    @IBOutlet weak var nameLabel: UILabel!
     
+    @IBOutlet weak var nameLabel: UILabel!
     
     @IBOutlet weak var playcountLabel: UILabel!
     
+    func setParametrs(track: Track) {
+        self.playcountLabel.text = track.playcount
+        self.nameLabel.text = track.name
+    }
+
 
 }
