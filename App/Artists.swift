@@ -10,8 +10,8 @@ import UIKit
 
 class Artists: UICollectionViewController {
     
-    var apiArtists = API()
-    var topArtists: [Artist]!
+    var dataManager = DataManager()
+    var topArtists: [Artist] = []
     var userName: String!
     
     override func viewDidLoad() {
@@ -19,22 +19,12 @@ class Artists: UICollectionViewController {
     }
     
     override func viewWillAppear(animated: Bool) {
-        self.apiArtists.searchFor(userName, urltipe: .Artists, completionHandler: { (JSONDictionary: NSDictionary) -> Void in
-            if let topartists = JSONDictionary["topartists"] as? NSDictionary {
-                if let artists: [AnyObject] = topartists["artist"] as? [AnyObject] {
-                    for index in 0..<artists.count {
-                        if let artist = artists[index] as? NSDictionary {
-                            if let images = artist["image"] as? [AnyObject] {
-                                if let image = images[2] as? NSDictionary {
-                                    self.topArtists[index] = Artist(name: artist["name"] as! String, playcount: artist["playcount"] as! String, imageURL: image["#text"] as! String)
-                                }
-                            }
-                        }
-                    }
-                }
-            }
+        self.dataManager.getTopArtists(userName, completionHandler: { (array: [Artist]) -> Void in
+            self.topArtists = array 
+            dispatch_async(dispatch_get_main_queue(), { () -> Void in
             self.collectionView!.reloadData()
-        })
+            })
+            })
     }
     
     
@@ -49,16 +39,16 @@ class Artists: UICollectionViewController {
     
     
     override func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        if topArtists != nil {
+        if topArtists.count > 0 {
             return topArtists.count
         }
-        return 2
+        return 0
     }
     
     
     override func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCellWithReuseIdentifier("Artists Cell", forIndexPath: indexPath) as! ArtistsCell
-        if topArtists != nil {
+        if topArtists.count > 0 {
         cell.setParametrs(topArtists[indexPath.item])
         }
         return cell

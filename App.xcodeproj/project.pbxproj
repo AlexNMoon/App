@@ -18,6 +18,7 @@
 		9E1E135C1BA06C4100033CF6 /* Tracks.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135B1BA06C4100033CF6 /* Tracks.swift */; };
 		9E1E135E1BA06D9F00033CF6 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E1E135D1BA06D9F00033CF6 /* API.swift */; };
 		9E3177541BB2D5A600630C78 /* libSDWebImage.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9E3177531BB2D5A600630C78 /* libSDWebImage.a */; };
+		9E88A6BE1BB580B70014BF4B /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E88A6BD1BB580B60014BF4B /* DataManager.swift */; };
 		9EADE43F1BAAE8AB005322F2 /* UserData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9EADE43E1BAAE8AB005322F2 /* UserData.swift */; };
 		9ED576161B9F09C600231004 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED576151B9F09C600231004 /* AppDelegate.swift */; };
 		9ED576181B9F09C600231004 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9ED576171B9F09C600231004 /* ViewController.swift */; };
@@ -53,6 +54,7 @@
 		9E1E135D1BA06D9F00033CF6 /* API.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		9E3177531BB2D5A600630C78 /* libSDWebImage.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libSDWebImage.a; path = "Pods/../build/Debug-iphoneos/libSDWebImage.a"; sourceTree = "<group>"; };
 		9E3177571BB2E30D00630C78 /* App-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "App-Bridging-Header.h"; sourceTree = "<group>"; };
+		9E88A6BD1BB580B60014BF4B /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		9EADE43E1BAAE8AB005322F2 /* UserData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserData.swift; sourceTree = "<group>"; };
 		9ED576101B9F09C600231004 /* App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = App.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9ED576141B9F09C600231004 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -146,6 +148,7 @@
 				9E0707F01BB42F2B0090E8E0 /* Track.swift */,
 				9E0707F21BB42F3A0090E8E0 /* Artist.swift */,
 				9E0707F41BB42F4A0090E8E0 /* Album.swift */,
+				9E88A6BD1BB580B60014BF4B /* DataManager.swift */,
 			);
 			path = App;
 			sourceTree = "<group>";
@@ -313,6 +316,7 @@
 				9E0707F51BB42F4A0090E8E0 /* Album.swift in Sources */,
 				9ED576181B9F09C600231004 /* ViewController.swift in Sources */,
 				9E0707F11BB42F2B0090E8E0 /* Track.swift in Sources */,
+				9E88A6BE1BB580B70014BF4B /* DataManager.swift in Sources */,
 				9E1E13581BA0671E00033CF6 /* TracksCell.swift in Sources */,
 				9E1E13521BA0632400033CF6 /* Artists.swift in Sources */,
 				9E1E135E1BA06D9F00033CF6 /* API.swift in Sources */,
